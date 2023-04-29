@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Articles details
+{% endblock %}
+{% block body %}
+    <h1>
+        {{ article['title'] }}
+    </h1>
+    <h5>
+        {{ article['text'] }}
+    </h5>
+    <h7>
+        Author : {{ article['author'] }}
+    </h7>
+
+{% endblock %}
