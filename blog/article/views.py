@@ -1,6 +1,8 @@
 from flask import Blueprint, render_template
 from werkzeug.exceptions import NotFound
 
+from blog.user.views import get_user_name
+
 article = Blueprint('article', __name__, url_prefix='/articles', static_folder='../static')
 
 
@@ -27,4 +29,5 @@ def get_article(pk: int):
         article = ARTICLES[pk]
     except KeyError:
         raise NotFound(f'Article id {pk} not found')
-    return render_template('articles/detail.html', article=article)
+    author = get_user_name(article['author'])
+    return render_template('articles/detail.html', article=article, author=author)

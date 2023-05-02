@@ -1,0 +1,6 @@
+{
+  "DEBUG": true,
+  "SECRET_KEY": "cu@jp62kq@_=fkzg5xkl@v_zr-(g4o8pz@k6d4zd-tc@mj+b)u",
+  "SQLALCHEMY_TRACK_MODIFICATION": false,
+  "SQLALCHEMY_DATABASE_URI": "sqlite:///db.sqlite"
+}
