@@ -13,5 +13,17 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="app" uuid="966538eb-8924-48fc-9a15-e8491a0208df">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/blog/app.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.40.1/sqlite-jdbc-3.40.1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
   </component>
 </project>
